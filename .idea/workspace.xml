@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="384c98a9-adf3-4c59-a0da-3376df3c91ab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/description_info.js" afterPath="$PROJECT_DIR$/assets/description_info.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="TryGit.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1427683761984" ignored="false" />
+    <file path="/Dummy.txt" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1427688069078" ignored="false" />
     <file path="/test.js" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1426752523376" ignored="false" />
     <file path="/1.html" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1426815218140" ignored="false" />
     <file path="/a.dummy" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1426757152543" ignored="false" />
@@ -50,9 +51,10 @@
     <file path="/practice_1_desc.md" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1427099188104" ignored="false" />
     <file path="$USER_HOME$/Downloads/css-test/course.json" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1427100226154" ignored="false" />
     <file path="/course.json" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1427098772738" ignored="false" />
-    <file path="$USER_HOME$/Downloads/css-test/section_1/practice_1.json" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1427100200492" ignored="false" />
+    <file path="$USER_HOME$/Downloads/css-test/section_1/practice_1.json" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1427688099653" ignored="false" />
     <file path="/practice_1.json" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1427099469134" ignored="false" />
     <file path="$USER_HOME$/Downloads/css-test/codes/practices/section_1/practice_1/practice_1.css" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1427100369471" ignored="false" />
+    <file path="$USER_HOME$/Downloads/css-test/section_2/practice_2.json" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1427688099653" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +82,7 @@
       <file leaf-file-name="1.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="13" selection-start="1576" selection-end="1576" vertical-scroll-proportion="0.26833633">
+            <state line="47" column="45" selection-start="2137" selection-end="2137" vertical-scroll-proportion="0.56350625">
               <folding />
             </state>
           </provider>
@@ -255,20 +257,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TryGit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TryGit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -342,13 +330,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="172" y="23" width="1301" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292402" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24780877" sideWeight="0.8194444" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24780877" sideWeight="0.8194444" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24876674" sideWeight="0.500684" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -528,7 +516,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="13" selection-start="1576" selection-end="1576" vertical-scroll-proportion="0.26833633">
+        <state line="47" column="45" selection-start="2137" selection-end="2137" vertical-scroll-proportion="0.56350625">
           <folding />
         </state>
       </provider>
