@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="384c98a9-adf3-4c59-a0da-3376df3c91ab" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1.html" afterPath="$PROJECT_DIR$/1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TryGit.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1427960364019" ignored="false" />
     <file path="/test.js" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1426752523376" ignored="false" />
-    <file path="/1.html" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1426815218140" ignored="false" />
+    <file path="/1.html" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1427968847765" ignored="false" />
     <file path="/a.dummy" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1426757152543" ignored="false" />
     <file path="/2.html" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1426815693044" ignored="false" />
     <file path="/3.html" changelist="384c98a9-adf3-4c59-a0da-3376df3c91ab" time="1426815703123" ignored="false" />
@@ -83,7 +82,7 @@
       <file leaf-file-name="1.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="91" selection-start="881" selection-end="881" vertical-scroll-proportion="0.6672598">
+            <state line="271" column="16" selection-start="11534" selection-end="11534" vertical-scroll-proportion="0.30540037">
               <folding />
             </state>
           </provider>
@@ -208,8 +207,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="83" />
-    <option name="y" value="29" />
+    <option name="x" value="-84" />
+    <option name="y" value="27" />
     <option name="width" value="1301" />
     <option name="height" value="745" />
   </component>
@@ -330,14 +329,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="83" y="29" width="1301" height="745" extended-state="0" />
-    <editor active="false" />
+    <frame x="-84" y="27" width="1301" height="745" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292402" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25577688" sideWeight="0.8194444" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25577688" sideWeight="0.8194444" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24876674" sideWeight="0.500684" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -517,7 +516,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="91" selection-start="881" selection-end="881" vertical-scroll-proportion="0.6672598">
+        <state line="271" column="16" selection-start="11534" selection-end="11534" vertical-scroll-proportion="0.30540037">
           <folding />
         </state>
       </provider>
