@@ -107,7 +107,7 @@
                                                 <div id = "editor-container"style="overflow: auto;float: left;height: 280px;width: 100%">
                                                     <pre id="show-input"  ><p>Press enter to submit commands:</p>&gt;</pre>
                                                     <div class="cursor" id ='cursor' style="margin-top: -19px;margin-left: 20px"></div>
-                                                    <span id="hide-input"></span>
+                                                    <span id="hide-input" hidden="true">s</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -184,15 +184,15 @@
             if(realkey.match(/>/g).length > 2){
                 var data = realkey.split(">")
                 document.getElementById("hide-input").innerHTML = data[data.length-1];
-//                console.log($("#hide-input").width());
-                var left = ($("#hide-input").width()/1.057+15 + parseInt(data[data.length-1].length/2)*0.9)%$("#show-input").width()  + 12;
+                console.log($("#hide-input").width());
+                var left = (data[data.length-1].length*$("#hide-input").width() + parseInt(data[data.length-1].length/2)*0.9)%$("#show-input").width()  + 12;
 //                var left = (data[data.length-1].length*8 + parseInt(data[data.length-1].length/2)*0.9)%$("#show-input").width()  + 12;
             }else{
 
                 var data = realkey.split("&gt;")
-                document.getElementById("hide-input").innerHTML = data[data.length-1];
-//                console.log($("#hide-input").width());
-                var left = ($("#hide-input").width()/1.057+15 + parseInt(data[data.length-1].length/2)*0.9)%$("#show-input").width()  + 12;
+//                document.getElementById("hide-input").innerHTML = data[data.length-1];
+                console.log($("#hide-input").width());
+                var left = (data[data.length-1].length*$("#hide-input").width() + parseInt(data[data.length-1].length/2)*0.9)%$("#show-input").width()  + 12;
 //                var left = (data[data.length-1].length*8 + parseInt(data[data.length-1].length/2)*0.9)%$("#show-input").width()  + 12;
 
             }
@@ -270,12 +270,12 @@
             if(realkey.match(/>/g).length > 2){
                 var data = realkey.split(">");
                 console.log($("#hide-input").width());
-                var left = ($("#hide-input").width()/1.057+15 + parseInt(data[data.length-1].length/2)*0.9)%$("#show-input").width()  + 12
+                var left = (data[data.length-1].length*$("#hide-input").width() + parseInt(data[data.length-1].length/2)*0.9)%$("#show-input").width()  + 12
 //                var left = (data[data.length-1].length*8 + parseInt(data[data.length-1].length/2)*0.9)%$("#show-input").width()  + 12
             }else{
 
                 var data = realkey.split("&gt;")
-                var left = ($("#hide-input").width()/1.057+15 + parseInt(data[data.length-1].length/2)*0.9)%$("#show-input").width()  + 12
+                var left = (data[data.length-1].length*$("#hide-input").width() + parseInt(data[data.length-1].length/2)*0.9)%$("#show-input").width()  + 12
 //                var left = ($("#hide-input").width()/1.057+15 + parseInt(data[data.length-1].length/2)*0.9)%$("#show-input").width()  + 12
 //                var left = (data[data.length-1].length*8 + parseInt(data[data.length-1].length/2)*0.9)%$("#show-input").width()  + 12
             }
