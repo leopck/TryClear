@@ -5,22 +5,22 @@
 
 var description_info = {
     "1":{"number": 1,
-        "title":"What is autospec?",
-        "instructions": "<p>autospec is a tool to assist in the automated creation and maintenance of RPM packaging. It will continuously run updated builds based on new information discovered from build failures until it has a complete and valid .spec file. The tool makes use of mock to achieve this.\n</p>\n\n\n\n\n<p>Let's clone the Clear Linux user setup script:</p><p><code class=\"input\">curl -O https://raw.githubusercontent.com/clearlinux/common/master/user-setup.sh</code></p>",
-        "file_browser": {"files": [], "name": "My Clear Linux Home"},
-        "advice": "<p><strong>Addtional resources：</strong><strong><code>https://github.com/clearlinux/common</code></strong></p>\n\n<p><strong><code>https://github.com/clearlinux/autospec</code></strong></p>\n\n"
+        "title":"Welcome to Clear Linux Web-based Training!",
+        "instructions": "<p>This guide will show you the development workflow on Clear Linux. We will cover development environment setup, buidling your first Clear Linux package, creating spec file for your open source project using autospec, integrating your local RPM content using mixin and creating your own custom Clear Linux image using mixer.\n</p>\n\n\n\n\n<p>First of all, let's download the Clear Linux user setup script:</p><p><code class=\"input\">curl -O https://raw.githubusercontent.com/clearlinux/common/master/user-setup.sh</code></p>",
+        "file_browser": {"files": [], "name": "/home/clearuser"},
+        "advice": "<p><strong>Addtional resources：</strong><strong>Read more about <code><a href='https://github.com/clearlinux/common'>Developer tooling framework for Clear Linux</a></code>.</strong></p>\n\n<p><strong>Read more about <code><a href='https://github.com/clearlinux/autospec'>Autospec</a></code>.</strong></p>\n\n"
     },
 
     "2":{"number": 2,
         "title":"Let's setup Clear Linux Common Tooling",
-        "instructions": "<p>Great! You have downloaded the setup script. Let's change the script accessibility permission to enable execution.</p>\n\n\n\n\n<p></p>\n\n\n\n\n<p>Now, enter the command below: <code>chmod +x user-setup.sh</code> 命令，看一下所在的工程的状态是：</p>\n\n\n\n\n<p><code class=\"input\">git status</code></p>",
+        "instructions": "<p>autospec is a tool to assist in the automated creation and maintenance of RPM packaging. It will continuously run updated builds based on new information discovered from build failures until it has a complete and valid .spec file. The tool makes use of mock to achieve this.</p>\n\n\n\n\n<p></p>\n\n\n\n\n<p>Now, enter the command below: </p>\n\n\n\n\n<p><code class=\"input\">chmod +x user-setup.sh</code></p>",
         "file_browser": {"files": ["user-setup.sh"], "name": "My Clear Linux Home"},
-        "advice": "<p><strong>关于.git 目录</strong> 在左边，你可以看到一个目录。它通常是隐藏的\n但是，为了方便讲解，我们给你展示出来。</p>\n\n<p>如果你点击它，你将会注意到它里面有各种各样的目录和文件。你将会极少\n需要在里面做任何事情，但是这就是Git的强大，所有神奇的事情在这里发生。</p>\n"
+        "advice": "<p><strong>About user setup script:</strong></p>\n\n<p></p>\n"
     },
 
     "3":{"number": 3,
         "title":"添加和提交",
-        "instructions": "<p>我们创建了一个文件名叫 <code>octocat.txt</code> 在你的octobox库\n（你可以在下面的浏览器中看到的）文件</p>\n\n\n\n\n<p>再次运行 <code>git status</code> 命令看看你的git仓库中发生了怎样的变化：</p>\n\n\n\n\n<p><code class=\"input\">git status</code></p>",
+        "instructions": "<p>Great! You have downloaded the user setup script. This script will help you to setup a Clear Linux development environment. Let's change the script accessibility permission to enable execution.我们创建了一个文件名叫 <code>octocat.txt</code> 在你的octobox库\n（你可以在下面的浏览器中看到的）文件</p>\n\n\n\n\n<p>再次运行 <code>git status</code> 命令看看你的git仓库中发生了怎样的变化：</p>\n\n\n\n\n<p><code class=\"input\">git status</code></p>",
         "file_browser":{"files":[{"name":"octocat.txt","status":"q"},".git/branches/",".git/objects/info/",".git/objects/pack/",".git/refs/heads/",".git/refs/tags/",".git/HEAD",".git/config",".git/description",".git/hooks/applypatch-msg.sample",".git/hooks/commit-msg.sample",".git/hooks/post-commit.sample",".git/hooks/post-receive.sample",".git/hooks/post-update.sample",".git/hooks/pre-applypatch.sample",".git/hooks/pre-commit.sample",".git/hooks/pre-rebase.sample",".git/hooks/prepare-commit-msg.sample",".git/hooks/update.sample",".git/info/exclude"],
             "name":"My Octobox Repository"},
         "advice": "<p><strong>提示：</strong> 仓库是正常的，经常运行 <code>git status</code>. 有时候，文件变了，你却不会注意到。</p>"
