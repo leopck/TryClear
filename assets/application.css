@@ -791,8 +791,11 @@ body {
     -webkit-backface-visibility: hidden;
     /*background: url(//d13jv82ekraqyq.cloudfront.net/assets/logo-course-f033bf74071abfec91179a25ddb7ba6c.gif) 95% 65% no-repeat;*/
     background : url(clearcamp.png) no-repeat;
-    background-size: 300px;
+    background-origin:padding-box; 
+    background-size: 200px;
     background-position:right;
+    padding-right: 15%;
+    /*background-position: 22% 50%*/
 
     opacity: 1;
     min-height: 190px;
@@ -1274,7 +1277,8 @@ body {
 }
 
 #terms #resource-group p strong {
-    color: #89AAC3;
+    /*color: #89AAC3;*/
+    color: #FFFFFF;
     display: block;
     font: bold 1.1em "OpenSansBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0 0 3px
