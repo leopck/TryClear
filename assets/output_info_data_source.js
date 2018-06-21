@@ -1,8 +1,8 @@
 /**
  * Created by chenyu on 15/2/15.
  */
-var git_command = "\nusage: git [--version] [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\t[-p|--paginate|--no-pager] [--no-replace-objects] [--bare]\n\t[--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n\t[-c name=value] [--help]\n\t<command> [<args>]\n\tThe most commonly used git commands are:\n\tadd\tAdd file contents to the index\n\tbisect\tFind by binary search the change that introduced a bug\n\tbranch     List, create, or delete branches\n\tcheckout\tCheckout a branch or paths to the working tree\n\tclone\tClone a repository into a new directory\n\tcommit\tRecord changes to the repository\n\tdiff \tShow changes between commits, commit and working tree, etc\n\t fetch \tDownload objects and refs from another repository\n\tgrep \tPrint lines matching a pattern\n\tinit \tCreate an empty git repository or reinitialize an existing one\n\tlog\tShow commit logs\n\tmerge \tJoin two or more development histories together\n\tmv \tMove or rename a file, a directory, or a symlink\n\tpull \tFetch from and merge with another repository or a local branch\n\tpush\tUpdate remote refs along with associated objects\n\trebase\tForward-port local commits to the updated upstream head\n\treset\tReset current HEAD to the specified state\n\trm \tRemove files from the working tree and from the index\n\tshow\tShow various types of objects\n\tstatus\tShow the working tree status\n\ttag \tCreate, list, delete or verify a tag object signed with GPG\n\n\tSee 'git help <command>' for more information on a specific command.\n\n\tDid not use git commit";
-var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in /.git/\n Success!",
+var curl_command = "\ncurl: try 'curl --help' or 'curl --manual' for more information";
+var output_info_datas = {"1":{"curl -O https://raw.githubusercontent.com/clearlinux/common/master/user-setup.sh":"\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n100  4718  100  4718    0     0  13252      0 --:--:-- --:--:-- --:--:-- 13252",
     "git status":"\nfatal: Not a git repository (or any of the parent directories): .git\nDid not create a Git repo",
     "git add octocat.txt":"\nfatal: Not a git repository (or any of the parent directories): .git\nDid not create a Git repo",
     "git commit -m \"Add cute octocat story\"":"\nerror: could not lock config file /.git/config: No such file or directory\nDid not create a Git repo",
@@ -22,7 +22,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
     "git branch -d clean_up":"\nfatal: Not a git repository (or any of the parent directories): .git\nDid not create a Git repo",
     " git rm octocat.txt":"\nfatal: Not a git repository (or any of the parent directories): .git\nDid not create a Git repo",
     "git rm '*.txt'":"\nfatal: Not a git repository (or any of the parent directories): .git\nDid not create a Git repo",
-    "git":git_command},
+    "curl":curl_command},
 
 "2":{"git init":"\nReinitialized existing Git repository in /.git/\nDid not use git status",
     "git status":"\n# On branch master\n#\n# Initial commit\n#\nnothing to commit (create/copy files and use \"git add\" to track)\nSuccess!",
@@ -44,7 +44,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
     "git branch -d clean_up":"\nfatal: Couldn't look up commit object for HEAD\nDid not use git status",
     " git rm octocat.txt":"\nfatal: pathspec 'octocat.txt' did not match any files\nDid not use git status",
     "git rm \"*.txt\"":"\nfatal: pathspec '*.txt' did not match any files\nDid not use git status",
-    "git":git_command},
+    "git":curl_command},
 
 "3":{"git init":"\nReinitialized existing Git repository in /.git/\nDid not use git status",
     "git status":"\n# On branch master\n#\n# Initial commit\n#\n# Untracked files:\n#\t(use \"git add <file>...\" to include in what will be committed)\n#\n#	octocat.txt\nnothing added to commit but untracked files present (use \"git add\" to track)\n\nSuccess!",
@@ -66,7 +66,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
     "git branch -d clean_up":"\nfatal: Couldn't look up commit object for HEAD\nDid not use git status",
     "git rm octocat.txt":"\nfatal: pathspec 'octocat.txt' did not match any files\nDid not use git status",
     "git rm \"*.txt\"":"\nfatal: pathspec '*.txt' did not match any files\nDid not use git status",
-    "git":git_command},
+    "git":curl_command},
 
 "4":{"git init":"\nReinitialized existing Git repository in /.git/\nDid not add octocat.txt",
     "git status":"\nOn branch master\nInitial commit\nUntracked files:\n(use \"git add <file>...\" to include in what will be committed)\n octocat.txt \nnothing added to commit but untracked files present (use \"git \nadd\" to track)\nDid not add octocat.txt",
@@ -88,7 +88,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
     "git branch -d clean_up":"\nfatal: Couldn't look up commit object for HEAD\nDid not add octocat.txt",
     "git rm octocat.txt":"\nfatal: pathspec 'octocat.txt' did not match any files\nDid not add octocat.txt",
     "git rm \"*.txt\"":"\nfatal: pathspec '*.txt' did not match any files\nDid not add octocat.txt",
-    "git":git_command},
+    "git":curl_command},
 
 "5":{"git init":"\nReinitialized existing Git repository in /.git/\nDid not use git status",
     "git status":"# On branch master\n#\n# Initial commit\n#\n# Changes to be committed:\n#\t(use \"git rm --cached <file>...\" to unstage)\n#\n#	new file:   octocat.txt\n#\n\n\tSuccess!",
@@ -110,7 +110,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
     "git branch -d clean_up":"\nfatal: Couldn't look up commit object for HEAD\nDid not use git status",
     "git rm octocat.txt":"\nerror: 'octocat.txt' has changes staged in the index\n(use --cached to keep the file, or -f to force removal)\nDid not use git status",
     "git rm \"*.txt\"":"\nerror: 'octocat.txt' has changes staged in the index\n(use --cached to keep the file, or -f to force removal)\nDid not use git status",
-    "git":git_command},
+    "git":curl_command},
 
 "6":{"git init":"\nReinitialized existing Git repository in /.git/\nDid not use git commit",
     "git status":"\nOn branch master\nInitial commit\nChanges to be committed:\n(use \"git rm --cached <file>...\" to unstage)\n new file: octocat.txt \nDid not use git commit",
@@ -132,7 +132,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
     "git branch -d clean_up":"\nfatal: Couldn't look up commit object for HEAD\nDid not use git commit",
     "git rm octocat.txt":"\nerror: 'octocat.txt' has changes staged in the index\n(use --cached to keep the file, or -f to force removal)\n\nDid not use git commit",
     "git rm \"*txt\"":"\nerror: 'octocat.txt' has changes staged in the index\n(use --cached to keep the file, or -f to force removal)\n\nDid not use git commit",
-    "git":git_command},
+    "git":curl_command},
 
 "7":{"git init":"\nReinitialized existing Git repository in /.git/\nDid not add \"red_octocat.txt\"",
     "git status":"\nOn branch master\nUntracked files:\n(use \"git add <file>...\" to include in what will be committed)\n blue_octocat.txt \n octofamily/ \n  red_octocat.txt \nnothing added to commit but untracked files present (use \"git\nadd\" to track)\nDid not add \"red_octocat.txt\"",
@@ -155,7 +155,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
     "git branch -d clean_up":"\nerror: branch 'clean_up' not found.\nDid not add \"red_octocat.txt\"",
     "git rm octocat.txt":"\nrm 'octocat.txt'\nDid not add \"red_octocat.txt\"",
     "git rm \"*.txt\"":"\nrm 'octocat.txt'\nDid not add \"red_octocat.txt\"",
-    "git":git_command},
+    "git":curl_command},
 
 "8":{"git init":"\nReinitialized existing Git repository in /.git/\nDid not use git commit",
     "git status":"\nOn branch master\nChanges to be committed:\n(use \"git reset HEAD <file>...\" to unstage)\n new file: blue_octocat.txt \n new file: octofamily/baby_octocat.txt \n new file: octofamily/momma_octocat.txt \n new file: red_octocat.txt \nDid not use git commit",
@@ -179,7 +179,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
     "git branch -d clean_up":"\nerror: branch 'clean_up' not found.\nDid not use git commit",
     "git rm octocat":"\nfatal: pathspec 'octocat' did not match any files\nDid not use git commit",
     "git rm \"red_octocat.txt\"":"\nerror: 'red_octocat.txt' has changes staged in the index\n(use --cached to keep the file, or -f to force removal)\nDid not use git commit",
-    "git":git_command},
+    "git":curl_command},
 
 "9":{
     "git init":"\nReinitialized existing Git repository in /.git/\nDid not use git log",
@@ -202,7 +202,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
         "git branch -d clean_up":"\nerror: branch 'clean_up' not found.\nDid not use git log",
         "git rm octocat.txt":"\nrm 'octocat.txt'\nDid not use git log",
         "git rm \"*.txt\"":"\nrm 'blue_octocat.txt\nrm 'octocat.txt'\nrm 'octofamily/baby_octocat.txt'\nrm 'octofamily/momma_octocat.txt'\nrm 'red_octocat.txt''\nDid not use git log",
-    "git":git_command},
+    "git":curl_command},
 
 "10":{
     "git init":"\nReinitialized existing Git repository in /.git/\nDid not use git remote add",
@@ -225,7 +225,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
         "git branch -d clean_up":"\nerror: branch 'clean_up' not found.\nDid not use git remote add",
         "git rm octocat.txt":"\nrm 'octocat.txt'\nDid not use git remote add",
         "git rm \"*.txt\"":"\nrm 'blue_octocat.txt'\nrm 'octocat.txt'\nrm 'octofamily/baby_octocat.txt'\nrm 'octofamily/momma_octocat.txt'\nrm 'red_octocat.txt'\nDid not use git remote add",
-    "git":git_command},
+    "git":curl_command},
 
 "11":{
     "git init":"\nReinitialized existing Git repository in /.git/\nDid not use git push",
@@ -248,7 +248,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
         "git branch -d clean_up":"\nerror: branch 'clean_up' not found.\nDid not use git push",
         "git rm octocat.txt":"\nrm 'octocat.txt'\nDid not use git push",
         "git rm \"*.txt\"":"\nrm 'blue_octocat.txt'\nrm 'octocat.txt'\nrm 'octofamily/baby_octocat.txt'\nrm 'octofamily/momma_octocat.txt'\nrm 'red_octocat.txt'\nDid not use git push",
-        "git":git_command},
+        "git":curl_command},
 
 "12":{
     "git init":"\nReinitialized existing Git repository in /.git/\nDid not use git pull",
@@ -270,7 +270,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
         "git branch -d clean_up":"\nerror: branch 'clean_up' not found.\nDid not use git pull",
         "git rm octocat.txt":"\nrm 'octocat.txt'\nDid not use git pull",
         "git rm \"*.txt\"":"\nrm 'blue_octocat.txt'\nrm 'octocat.txt'\nrm 'octofamily/baby_octocat.txt'\nrm 'octofamily/momma_octocat.txt'\nrm 'red_octocat.txt'\nDid not use git pull",
-        "git":git_command},
+        "git":curl_command},
 
 "13":{"git init":"\nReinitialized existing Git repository in /.git/\nDid not use git diff",
     "git status":"\nOn branch master\nChanges not staged for commit:\n (use \"git add <file>...\" to update what will be committed)\n(use \"git checkout -- <file>...\" to discard changes in working\ndirectory)\n modified: octocat.txt \nUntracked files:\n (use \"git add <file>...\" to include in what will be committed)\n octofamily/octodog.txt \nno changes added to commit (use \"git add\" and/or \"git commit -a\")\nDid not use git diff",
@@ -290,7 +290,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
     "git branch -d clean_up":"\nerror: branch 'clean_up' not found.\nDid not use git diff",
     "git rm octocat.txt":"\nerror: 'octocat.txt' has local modifications\n(use --cached to keep the file, or -f to force removal)\nDid not use git diff",
     "git rm \"*.txt\"":"\nerror: 'octocat.txt' has local modifications\n(use --cached to keep the file, or -f to force removal)\n\nDid not use git diff",
-    "git":git_command},
+    "git":curl_command},
 
 "14":{
     "git init":"\nReinitialized existing Git repository in /.git/\nUse git add to add octofamily/octodog.txt",
@@ -314,7 +314,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
         "git branch -d clean_up":"\nerror: branch 'clean_up' not found.\nUse git add to add octofamily/octodog.txt",
         "git rm octofamily/octocat":"\nfatal: pathspec 'octofamily/octocat' did not match any files\nUse git add to add octofamily/octodog.txt",
         "git rm \"octofamily/octodog.txt\"":"\nfatal: pathspec 'octofamily/octodog.txt' did not match any files\nUse git add to add octofamily/octodog.txt",
-        "git":git_command},
+        "git":curl_command},
 
 "15":{
     "git init":"\nReinitialized existing Git repository in /.git/\nUse git diff to see what has changed",
@@ -337,7 +337,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
         "git branch -d clean_up":"\nerror: branch 'clean_up' not found.\nUse git diff to see what has changed",
         "git rm octocat.txt":"\nerror: 'octocat.txt' has local modifications\n(use --cached to keep the file, or -f to force removal)\nUse git diff to see what has changed",
         "git rm \"*.txt\"":"\nerror: 'octocat.txt' has local modifications\n(use --cached to keep the file, or -f to force removal)\nerror: 'octofamily/octodog.txt' has changes staged in the index\n(use --cached to keep the file, or -f to force removal)\nUse git diff to see what has changed",
-        "git":git_command,
+        "git":curl_command,
         "git branch":"* master\nUse git reset to unstage octofamily/octodog.txt"
 },
 
@@ -362,7 +362,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
         "git branch -d lll":"\nerror: branch 'clean_up' not found.\nUse git reset to unstage octofamily/octodog.txt",
         "git rm octofamily/octodog.txt":"\nerror: 'octofamily/octodog.txt' has changes staged in the index\n(use --cached to keep the file, or -f to force removal)\ngit rm will delete the actual file without the '--cached' option. \nInclude '--cached' to unstage the file",
         "git rm \"octofamily/octodog.txt\"":"\nerror: 'octofamily/octodog.txt' has changes staged in the index\n(use --cached to keep the file, or -f to force removal)\ngit rm will delete the actual file without the '--cached' option.\nInclude '--cached' to unstage the file",
-        "git":git_command,
+        "git":curl_command,
         "git branch":"* master\nUse git reset to unstage octofamily/octodog.txt"
 },
 
@@ -387,7 +387,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
         "git branch -d clean_up":"\nerror: branch 'clean_up' not found.\nUse git checkout to revert the changes to 'octocat.txt'",
         "git rm octocat.txt":"\nerror: 'octocat.txt' has local modifications\n(use --cached to keep the file, or -f to force removal)\nUse git checkout to revert the changes to 'octocat.txt'",
         "git rm \"octocat.txt\"":"\nerror: 'octocat.txt' has local modifications\n(use --cached to keep the file, or -f to force removal)\nUse git checkout to revert the changes to 'octocat.txt'",
-        "git":git_command,
+        "git":curl_command,
         "git branch":"* master\nUse git checkout to revert the changes to 'octocat.txt'"
 },
 
@@ -412,7 +412,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
         "git branch -d clean_up":"\nerror: branch 'clean_up' not found.\nSuccess!",
         "git rm octocat.txt":"\nrm 'octocat.txt'\nUse git branch to create a branch named 'clean_up'",
         "git rm \"*.txt\"":"\nrm 'blue_octocat.txt'\nrm 'octocat.txt'\nrm 'octofamily/baby_octocat.txt'\nrm 'octofamily/momma_octocat.txt'\nrm 'red_octocat.txt'\nUse git branch to create a branch named 'clean_up'",
-        "git":git_command,
+        "git":curl_command,
         "git branch":"\n* master\nI really want you to call the branch 'clean_up', the memo has already been sent."
 },
 
@@ -437,7 +437,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
         "git branch -d clean_up":"\nDeleted branch clean_up (was 3852b4d).\nYou already created the clean_up branch in the last challenge, \nno need to do it again.",
         "git rm octocat.txt":"\nrm 'octocat.txt'\nUse 'git checkout' to switch to the 'clean_up' branch",
         "git rm \"*.txt\"":"\nrm 'blue_octocat.txt'\nrm 'octocat.txt'\nrm 'octofamily/baby_octocat.txt'\nrm 'octofamily/momma_octocat.txt'\nrm 'red_octocat.txt'\nUse 'git checkout' to switch to the 'clean_up' branch",
-        "git":git_command,
+        "git":curl_command,
         "git branch":"\nclean_up\n* master\nUse 'git checkout' to switch to the 'clean_up' branch"
 },
 
@@ -463,7 +463,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
         "git rm octocat.txt":"\nrm 'octocat.txt'\nWhile you could remove each cat individually, why would you want to put yourself through that? Use the wildcard!",
         "git rm \"*.txt\"":"\nrm 'blue_octocat.txt'\nrm 'octocat.txt'\nrm 'octofamily/baby_octocat.txt'\nrm 'octofamily/momma_octocat.txt'\nrm 'red_octocat.txt'\nSuccess!",
         "git rm '*.txt'":"\nrm 'blue_octocat.txt'\nrm 'octocat.txt'\nrm 'octofamily/baby_octocat.txt'\nrm 'octofamily/momma_octocat.txt'\nrm 'red_octocat.txt'\nSuccess!",
-        "git":git_command,
+        "git":curl_command,
         "git branch":"* clean_up\nmaster\nUse 'git rm' to remove and stage the octocats"
 },
 
@@ -488,7 +488,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
         "git branch -d clean_up":"\nerror: Cannot delete the branch 'clean_up' which you are currently on.\nDid not use git commit",
         "git rm octocat.txt":"\nfatal: pathspec 'octocat.txt' did not match any files\nDid not use git commit",
         "git rm \"*.txt\"":"\nfatal: pathspec '*.txt' did not match any files\nDid not use git commit",
-        "git":git_command,
+        "git":curl_command,
         "git branch":"* clean_up\nmaster\nDid not use git commit"
 },
 
@@ -513,7 +513,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
         "git branch -d clean_up":"\nerror: Cannot delete the branch 'clean_up' which you are currently on.\nNo need to create another branch, the 'master' branch already exists.",
         "git rm octocat.txt":"\nfatal: pathspec 'octocat.txt' did not match any files\nUse 'git checkout' to switch to the 'master' branch",
         "git rm \"*.txt\"":"\nfatal: pathspec '*.txt' did not match any files\nUse 'git checkout' to switch to the 'master' branch",
-        "git":git_command,
+        "git":curl_command,
         "git branch":"master\nUse 'git checkout' to switch to the 'master' branch"
 },
 
@@ -537,7 +537,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
         "git branch -d clean_up":"\nerror: The branch 'clean_up' is not fully merged.\nIf you are sure you want to delete it, run 'git branch -D clean_up'.\nUse 'git merge' to merge the clean_up branch with master",
         "git rm octocat.txt":"\nrm 'octocat.txt'\nUse 'git merge' to merge the clean_up branch with master",
         "git rm \"*.txt\"":"\nrm 'blue_octocat.txt'\nrm 'octocat.txt'\nrm 'octofamily/baby_octocat.txt'\nrm 'octofamily/momma_octocat.txt'\nrm 'red_octocat.txt'\nUse 'git merge' to merge the clean_up branch with master",
-        "git":git_command,
+        "git":curl_command,
         "git branch":"\nclean_up\n* master\nUse 'git merge' to merge the clean_up branch with master"
 },
 
@@ -562,7 +562,7 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
         "git branch -d clean_up":"\nDeleted branch clean_up (was ec6888b).\nSuccess!",
         "git rm octocat.txt":"\nfatal: pathspec 'octocat.txt' did not match any files\nUse 'git branch -d' to delete the clean_up branch",
         "git rm \"*.txt\"":"\nfatal: pathspec '*.txt' did not match any files\nUse 'git branch -d' to delete the clean_up branch",
-        "git":git_command,
+        "git":curl_command,
         "git branch":"\nclean_up\n* master\nDon't forget the '-d' option!"
 },
 
@@ -587,16 +587,16 @@ var output_info_datas = {"1":{"git init":"\nInitialized empty Git repository in 
         "git branch -d clean_up":"\nerror: branch 'clean_up' not found.\nUse 'git push' to push your repository to your remote",
         "git rm octocat.txt":"\nfatal: pathspec 'octocat.txt' did not match any files\nUse 'git push' to push your repository to your remote",
         "git rm \"*.txt\"":"\nrm 'yellow_octocat.txt'\nUse 'git push' to push your repository to your remote",
-        "git":git_command,
+        "git":curl_command,
         "git branch":"* master\nUse 'git push' to push your repository to your remote"
 }
 };
 
 
 
-var array_correct_inputs = ["git init",
-    "git status",
-    "git status",
+var array_correct_inputs = ["curl -O https://raw.githubusercontent.com/clearlinux/common/master/user-setup.sh",
+    "chmod +x user-setup.sh",
+    "./user-setup.sh",
     "git add octocat.txt",
     "git status",
     "git commit -m \"Add cute octocat story\"",

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- curl 'https://portalapps.intel.com/Auth/api/values' -H 'Origin: https://employeecontent.intel.com' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36' -H 'Accept: */*' -H 'Referer: https://employeecontent.intel.com/content/news/home/circuithome.html' -H 'Connection: keep-alive' --compressed -->
+  <!-- https://portalapps.intel.com/MyLinks/api/QuickLinks/TreeJsonData?userId=phoongst -->
+  <!-- https://portalapps.intel.com/Auth/api/values -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- jsonpCallback: href.match(/([?&]callback[a-zA-Z0-9=]+)/)[0].split('=')[1], -->
+<script>
+
+document.domain = 'https://employeecontent.intel.com'
+var href = 'https://portalapps.intel.com/PortalUtilityApi/api/values/GetUser';
+      data: JSON.stringify ({"jsonrpc": "2.0", "method": "option", "params": {"username":"phoongst","password":"[Icmp:678]]"}, "id": 1}), 
+$.ajax({
+  url: 'https://portalapps.intel.com/PortalUtilityApi/api/values/GetUser',
+  crossDomain: true,
+      type:"OPTIONS",
+      contentType:"application/json",
+      dataType: 'jsonp',
+      jsonp: false,
+      cache: true,
+      method: "POST",
+      // jsonpCallback: "localJsonpCallback",
+      success: function (data) { 
+             alert("ok2");
+      },
+      error: function (err) {
+              console.log(err);
+             alert("err2");
+      }
+   });
+
+
+// var url = "https://employeecontent.intel.com";          
+// var myframe = $("<iframe/>").attr("src", url).attr("width", "0px").attr("height", "0px").attr("id", "my_iframe");   
+// $("#container").append(myframe);
+
+
+// // Create the XHR object.
+// function createCORSRequest(method, url) {
+//   var xhr = new XMLHttpRequest();
+//   if ("withCredentials" in xhr) {
+//     // XHR for Chrome/Firefox/Opera/Safari.
+//     xhr.open(method, url, true);
+//   } else if (typeof XDomainRequest != "undefined") {
+//     // XDomainRequest for IE.
+//     xhr = new XDomainRequest();
+//     xhr.open(method, url);
+//   } else {
+//     // CORS not supported.
+//     xhr = null;
+//   }
+//   return xhr;
+// }
+// 
+// // Helper method to parse the title tag from the response.
+// function getTitle(text) {
+//   return text.match('<title>(.*)?</title>')[1];
+// }
+// 
+// // Make the actual CORS request.
+// function makeCorsRequest() {
+//   // This is a sample server that supports CORS.
+//   var url = 'https://portalapps.intel.com/PortalUtilityApi/api/values/GetUser';
+// 
+//   var xhr = createCORSRequest('GET', url);
+//   if (!xhr) {
+//     alert('CORS not supported');
+//     return;
+//   }
+// 
+//   // Response handlers.
+//   xhr.onload = function() {
+//     var text = xhr.responseText;
+//     var title = getTitle(text);
+//     alert('Response from CORS request to ' + url + ': ' + title);
+//   };
+// 
+//   xhr.onerror = function() {
+//     alert('Woops, there was an error making the request.');
+//   };
+// 
+//   xhr.send();
+// }
+// var url = 'https://portalapps.intel.com/PortalUtilityApi/api/values/GetUser';
+// var xhr = createCORSRequest('OPTIONS', url);
+// xhr.setRequestHeader(
+//     'Origin', 'https://employeecontent.intel.com');
+// xhr.send();
+
+// $.ajax({
+//     url: "http://www.example.com/api",
+//     beforeSend: function(xhr) { 
+//       xhr.setRequestHeader("Authorization", "Basic " + btoa("username:password")); 
+//     },
+//     type: 'POST',
+//     dataType: 'json',
+//     contentType: 'application/json',
+//     processData: false,
+//     data: '{"foo":"bar"}',
+//     success: function (data) {
+//       alert(JSON.stringify(data));
+//     },
+//     error: function(){
+//       alert("Cannot get data");
+//     }
+// });
+</script>
+
+<script type="text/javascript">
+function localJsonpCallback(json) {
+     if (!json.Error) {
+       console.log("if");
+         // $('#resultForm').submit();
+     }
+     else {
+       console.log(json);
+         // $('#loading').hide();
+         // $('#userForm').show();
+         // alert(json.Message);
+     }
+ }
+</script>
+</head>
+<body>
+
+<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+
+<button>Get External Content</button>
+
+</body>
+</html>

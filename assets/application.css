@@ -592,7 +592,7 @@ body {
     -o-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
     display: block;
-    background-image: url("/assets/logo-gray.png") !important;
+    background-image: url("/assets/clearcamp.png") !important;
 }
 
 .button b {
@@ -790,7 +790,7 @@ body {
     transition: opacity 0.6s ease-in-out;
     -webkit-backface-visibility: hidden;
     /*background: url(//d13jv82ekraqyq.cloudfront.net/assets/logo-course-f033bf74071abfec91179a25ddb7ba6c.gif) 95% 65% no-repeat;*/
-    background : url(logo-black.png) no-repeat;
+    background : url(clearcamp.png) no-repeat;
     background-size: 300px;
     background-position:right;
 

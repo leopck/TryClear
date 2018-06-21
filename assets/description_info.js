@@ -7,15 +7,14 @@ var description_info = {
     "1":{"number": 1,
         "title":"What is autospec?",
         "instructions": "<p>autospec is a tool to assist in the automated creation and maintenance of RPM packaging. It will continuously run updated builds based on new information discovered from build failures until it has a complete and valid .spec file. The tool makes use of mock to achieve this.\n</p>\n\n\n\n\n<p>Let's clone the Clear Linux user setup script:</p><p><code class=\"input\">curl -O https://raw.githubusercontent.com/clearlinux/common/master/user-setup.sh</code></p>",
-        "file_browser": {"files": ["Makefile", "autogen.sh"], "name": "My Octobox Repository"},
-        "advice": "<p><strong>目录：</strong> 一个文件夹存储了多个文件</p>\n\n<p><strong>仓库:</strong> 一个Git仓库已经被初始化，开始控制文件的版本</p>\n\n<p><strong>Clicky 点击:</strong> 点击箭头指向的文本。\n这些文字将会被复制到终端。</p>\n"
+        "file_browser": {"files": [], "name": "My Clear Linux Home"},
+        "advice": "<p><strong>Addtional resources：</strong><strong><code>https://github.com/clearlinux/common</code></strong></p>\n\n<p><strong><code>https://github.com/clearlinux/autospec</code></strong></p>\n\n"
     },
 
     "2":{"number": 2,
-        "title":"检查状态",
-        "instructions": "<p>干得好！Git只是告诉我们， \"octobox\"目录现在已经有一个空的仓库在 <code>/.git/</code>。进行git操作时，该库是一个隐藏目录。</p>\n\n\n\n\n<p>通过本课程保存你的进度-- 并且当你完成本题时，你将获得一枚徽章 -- 进入\n到这里 <a href=\"http://codefordream.com/\">创建一个CodeForDream的免费账户</a>。我们将会在这等你。</p>\n\n\n\n\n<p>接下来，让我们输入 <code>git status</code> 命令，看一下所在的工程的状态是：</p>\n\n\n\n\n<p><code class=\"input\">git status</code></p>",
-        "file_browser": {"files": [".git/branches/", ".git/objects/info/", ".git/objects/pack/", ".git/refs/heads/", ".git/refs/tags/", ".git/HEAD", ".git/config", ".git/description", ".git/hooks/applypatch-msg.sample", ".git/hooks/commit-msg.sample", ".git/hooks/post-commit.sample", ".git/hooks/post-receive.sample", ".git/hooks/post-update.sample", ".git/hooks/pre-applypatch.sample", ".git/hooks/pre-commit.sample", ".git/hooks/pre-rebase.sample", ".git/hooks/prepare-commit-msg.sample", ".git/hooks/update.sample", ".git/info/exclude"],
-         "name": "My Octobox Repository"},
+        "title":"Let's setup Clear Linux Common Tooling",
+        "instructions": "<p>Great! You have downloaded the setup script. Let's change the script accessibility permission to enable execution.</p>\n\n\n\n\n<p></p>\n\n\n\n\n<p>Now, enter the command below: <code>chmod +x user-setup.sh</code> 命令，看一下所在的工程的状态是：</p>\n\n\n\n\n<p><code class=\"input\">git status</code></p>",
+        "file_browser": {"files": ["user-setup.sh"], "name": "My Clear Linux Home"},
         "advice": "<p><strong>关于.git 目录</strong> 在左边，你可以看到一个目录。它通常是隐藏的\n但是，为了方便讲解，我们给你展示出来。</p>\n\n<p>如果你点击它，你将会注意到它里面有各种各样的目录和文件。你将会极少\n需要在里面做任何事情，但是这就是Git的强大，所有神奇的事情在这里发生。</p>\n"
     },
 
