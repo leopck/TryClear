@@ -19,11 +19,10 @@ var description_info = {
     },
 
     "3":{"number": 3,
-        "title":"添加和提交",
-        "instructions": "<p>我们创建了一个文件名叫 <code>octocat.txt</code> 在你的octobox库\n（你可以在下面的浏览器中看到的）文件</p>\n\n\n\n\n<p>再次运行 <code>git status</code> 命令看看你的git仓库中发生了怎样的变化：</p>\n\n\n\n\n<p><code class=\"input\">git status</code></p>",
-        "file_browser":{"files":[{"name":"octocat.txt","status":"q"},".git/branches/",".git/objects/info/",".git/objects/pack/",".git/refs/heads/",".git/refs/tags/",".git/HEAD",".git/config",".git/description",".git/hooks/applypatch-msg.sample",".git/hooks/commit-msg.sample",".git/hooks/post-commit.sample",".git/hooks/post-receive.sample",".git/hooks/post-update.sample",".git/hooks/pre-applypatch.sample",".git/hooks/pre-commit.sample",".git/hooks/pre-rebase.sample",".git/hooks/prepare-commit-msg.sample",".git/hooks/update.sample",".git/info/exclude"],
-            "name":"My Octobox Repository"},
-        "advice": "<p><strong>提示：</strong> 仓库是正常的，经常运行 <code>git status</code>. 有时候，文件变了，你却不会注意到。</p>"
+        "title":"Run the user setup script.",
+        "instructions": "<p>We can run the setup process by launching the <code>user-setup.sh</code> script as an unprivileged user.</p>\n\n\n\n\n<p>This script will download Clear Linux developer tooling framework into a folder named <code>clearlinux</code>. Let's run the command below:</p>\n\n\n\n\n<p><code class=\"input\">./user-setup.sh</code></p>",
+        "file_browser":{"files":["user-setup.sh"], "name":"/home/clearuser"},
+        "advice": "<p><strong>Manual Setup</strong>\nIf you do not wish to run the user-setup script, you can refer to <code><a href='https://github.com/clearlinux/common#manual-setup'>manual setup</code> for hints about how to initialize the tooling workspace.</p>"
     },
 
     "4":{

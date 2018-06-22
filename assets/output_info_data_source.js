@@ -5,33 +5,14 @@ var curl_command = "\ncurl: try 'curl --help' or 'curl --manual' for more inform
 
 var output_info_datas = {
 "1":{"curl -O https://raw.githubusercontent.com/clearlinux/common/master/user-setup.sh":"\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n100  4718  100  4718    0     0  13252      0 --:--:-- --:--:-- --:--:-- 13252",
-    "curl":curl_command},
+    "curl":"\ncurl: try 'curl --help' or 'curl --manual' for more information"},
 
 "2":{"chmod +x user-setup.sh":"\n",
-    "chmod a+x user-setup.sh":"chmod: incorrect operand\nTry 'chmod +x user-setup.sh' to proceed."
+    "chmod a+x user-setup.sh":"chmod: incorrect operand\nTry 'chmod +x user-setup.sh' to proceed.",
     "chmod":"chmod: missing operand\nTry 'chmod +x user-setup.sh' to proceed."},
 
-"3":{"git init":"\nReinitialized existing Git repository in /.git/\nDid not use git status",
-    "git status":"\n# On branch master\n#\n# Initial commit\n#\n# Untracked files:\n#\t(use \"git add <file>...\" to include in what will be committed)\n#\n#	octocat.txt\nnothing added to commit but untracked files present (use \"git add\" to track)\n\nSuccess!",
-    "git add octocat.txt":"\nDid not use git status",
-    "git commit -m \"Add cute octocat story\"":"'\nDid not use git status",
-    "git log":"\nfatal: bad default revision 'HEAD'\nDid not use git status",
-    "git remote add origin https://github.com/try-git/try_git.git":"\nDid not use git status",
-    "git push -u origin master":"\nfatal: 'origin' does not appear to be a git repository\nfatal: The remote end hung up unexpectedly\nDid not use git status",
-    "git push":"\nfatal: No configured push destination.\nEither specify the URL from the command-line or configure a \nremote repository using\ngit remote add <name> <url>\nand then push using the remote name\ngit push <name>\nDid not use git status",
-    "git pull origin master":"\nfatal: 'origin' does not appear to be a git repository\nfatal: The remote end hung up unexpectedly\nDid not use git status",
-    "git diff HEAD":"\nfatal: ambiguous argument 'HEAD': unknown revision or path not\nin the working tree.\nUse '--' to separate paths from revisions\nDid not use git status",
-    "git diff -staged":"\ninvalid option -- s",
-    "git reset octofamily/octodog.txt":"\nfatal: ambiguous argument 'octofamily/octodog.txt': unknown revision or path\nnot in the working tree.\nUse '--' to separate paths from revisions\nDid not use git status",
-    "git checkout -- octocat.txt":"\nerror: pathspec 'octocat.txt' did not match any file(s) known to git.\nDid not use git status",
-    "git branch clean_up":"\nfatal: Not a valid object name: 'master'.\nDid not use git status",
-    "git checkout clean_up":"\nerror: pathspec 'clean_up' did not match any file(s) known to git.\nDid not use git status",
-    "git checkout master":"\nerror: pathspec 'master' did not match any file(s) known to git.\nDid not use git status",
-    "git merge clean_up":"\nfatal: clean_up - not something we can merge\nDid not use git status",
-    "git branch -d clean_up":"\nfatal: Couldn't look up commit object for HEAD\nDid not use git status",
-    "git rm octocat.txt":"\nfatal: pathspec 'octocat.txt' did not match any files\nDid not use git status",
-    "git rm \"*.txt\"":"\nfatal: pathspec '*.txt' did not match any files\nDid not use git status",
-    "git":curl_command},
+"3":{"./user-setup.sh":"\nInitializing development workspace in \"clearlinux\" . . .\nSetting up common repo . . .\nCloning into 'projects/common'...\nremote: Counting objects: 786, done.\nremote: Compressing objects: 100% (47/47), done.\nremote: Total 786 (delta 23), reused 30 (delta 5), pack-reused 734\nReceiving objects: 100% (786/786), 1.30 MiB | 1005.00 KiB/s, done.\nResolving deltas: 100% (456/456), done.\nAdding user to kvm group . . .\nCloning special project repositories . . .\nChecking out: projects/autospec\nCloning into 'projects/autospec'...\nremote: Counting objects: 3957, done.\nremote: Compressing objects: 100% (34/34), done.\nremote: Total 3957 (delta 33), reused 44 (delta 29), pack-reused 3894\nReceiving objects: 100% (3957/3957), 17.75 MiB | 1.41 MiB/s, done.\nResolving deltas: 100% (2519/2519), done.\nChecking out: projects/clr-bundles\nCloning into 'projects/clr-bundles'...\nremote: Counting objects: 7612, done.\nremote: Compressing objects: 100% (109/109), done.\nremote: Total 7612 (delta 118), reused 112 (delta 65), pack-reused 7438\nReceiving objects: 100% (7612/7612), 1.06 MiB | 894.00 KiB/s, done.\nResolving deltas: 100% (5624/5624), done.\nCreating mix workspace . . .\n\n************************\nWorkspace has been set up in \"clearlinux\"\nNOTE: To clone all package repos, run \"cd clearlinux; make [-j NUM] clone-packages\"\nNOTE: To clone a single package repo with NAME, run \"cd clearlinux; make clone_NAME\"\nNOTE: logout and log back in to finalize the setup process\n",
+    "user-setup.sh":"\nTry './user-setup.sh' to proceed."},
 
 "4":{"git init":"\nReinitialized existing Git repository in /.git/\nDid not add octocat.txt",
     "git status":"\nOn branch master\nInitial commit\nUntracked files:\n(use \"git add <file>...\" to include in what will be committed)\n octocat.txt \nnothing added to commit but untracked files present (use \"git \nadd\" to track)\nDid not add octocat.txt",
@@ -556,7 +537,6 @@ var output_info_datas = {
         "git branch":"* master\nUse 'git push' to push your repository to your remote"
 }
 };
-
 
 
 var array_correct_inputs = ["curl -O https://raw.githubusercontent.com/clearlinux/common/master/user-setup.sh",
