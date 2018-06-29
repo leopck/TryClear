@@ -1,0 +1,31 @@
+Initializing development workspace in "clearlinux" . . .
+Setting up common repo . . .
+Cloning into 'projects/common'...
+remote: Counting objects: 786, done.
+remote: Compressing objects: 100% (47/47), done.
+remote: Total 786 (delta 23), reused 30 (delta 5), pack-reused 734
+Receiving objects: 100% (786/786), 1.30 MiB | 384.00 KiB/s, done.
+Resolving deltas: 100% (456/456), done.
+Adding user to kvm group . . .
+Cloning special project repositories . . .
+Checking out: projects/autospec
+Cloning into 'projects/autospec'...
+remote: Counting objects: 3957, done.
+remote: Compressing objects: 100% (34/34), done.
+remote: Total 3957 (delta 33), reused 44 (delta 29), pack-reused 3894
+Receiving objects: 100% (3957/3957), 17.75 MiB | 3.27 MiB/s, done.
+Resolving deltas: 100% (2519/2519), done.
+Checking out: projects/clr-bundles
+Cloning into 'projects/clr-bundles'...
+remote: Counting objects: 7612, done.
+remote: Compressing objects: 100% (109/109), done.
+remote: Total 7612 (delta 118), reused 112 (delta 65), pack-reused 7438
+Receiving objects: 100% (7612/7612), 1.06 MiB | 947.00 KiB/s, done.
+Resolving deltas: 100% (5624/5624), done.
+Creating mix workspace . . .
+
+************************
+Workspace has been set up in "clearlinux"
+NOTE: To clone all package repos, run "cd clearlinux; make [-j NUM] clone-packages"
+NOTE: To clone a single package repo with NAME, run "cd clearlinux; make clone_NAME"
+NOTE: logout and log back in to finalize the setup process
