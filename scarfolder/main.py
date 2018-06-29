@@ -1,7 +1,7 @@
 import os
 
 # Change this variable accordingly
-build_dir = "/media/rebeccas/clear-linux/clearlinux/projects"
+build_dir = "/media/rebeccas/clear-linux/clearlinux"
 filename = "/media/rebeccas/work/10_trygit/3.txt"
 filename2 = "/media/rebeccas/work/10_trygit/output.txt"
 
@@ -30,5 +30,3 @@ def write_into_html(args):
 
 if __name__ == '__main__':
     print(recursive_folder(build_dir))
-    
-    # fileContents.close()
