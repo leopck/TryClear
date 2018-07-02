@@ -377,9 +377,9 @@ var description_info = {
 
     "7": {
         "number": 7,
-        "title": "添加所有更改",
-        "instructions": "<p>太好了! 如果你想添加相同类型的多个文件，你也可以使用通配符添加文件到Git库里。注意：我已经添加所有的.txt文件到你本地的目录下。</p>\n\n\n\n\n<p>我放了一些名叫\"octofamily\"的文件放到下面的根目录下。使用 <code>git add</code>+通配符 添加所有新建的文件。不要忘记引号！ </p>\n\n\n\n\n<p><code class=\"input\">git add '*.txt'</code></p>",
-        "file_browser": { "files": [{ "name": "blue_octocat.txt", "status": "q" }, "octocat.txt", { "name": "red_octocat.txt", "status": "q" }, { "name": "octofamily/baby_octocat.txt", "status": "q" }, { "name": "octofamily/momma_octocat.txt", "status": "q" }, ".git/branches/", ".git/info/", ".git/logs/refs/heads/", ".git/objects/14/", ".git/objects/21/", ".git/objects/43/", ".git/objects/info/", ".git/objects/pack/", ".git/refs/heads/", ".git/refs/tags/", ".git/COMMIT_EDITMSG", ".git/HEAD", ".git/config", ".git/description", ".git/hooks/applypatch-msg.sample", ".git/hooks/commit-msg.sample", ".git/hooks/post-commit.sample", ".git/hooks/post-receive.sample", ".git/hooks/post-update.sample", ".git/hooks/pre-applypatch.sample", ".git/hooks/pre-commit.sample", ".git/hooks/pre-rebase.sample", ".git/hooks/prepare-commit-msg.sample", ".git/hooks/update.sample", ".git/index", ".git/info/exclude", ".git/logs/HEAD", ".git/logs/refs/heads/master", ".git/objects/14/b2cf8cd9d24890f7168c534e5c0cd203b1d5a0", ".git/objects/21/e250f8f09826955e872705290c007fa0a889e7", ".git/objects/43/61a821f32cd9f39a074c58aa542454c4706174", ".git/refs/heads/master"], "name": "My Octobox Repository" },
+        "title": "Hello World",
+        "instructions": "<p>This website is written in JS.</p>\n\n\n\n\n<p>我放了一些名叫\"octofamily\"的文件放到下面的根目录下。使用 <code>git add</code>+通配符 添加所有新建的文件。不要忘记引号！ </p>\n\n\n\n\n<p><code class=\"input\">git add '*.txt'</code></p>",
+        "file_browser": { "files": ["helloworld.txt", "junk/food/night/goodbyeworld.txt"], "name": "Changeme" },
         "advice": "<p><strong>通配符：</strong>\n我们需要引号，这样在我们的shell程序之前，Git会接收到通配符 \n 不包括引号我们的shell只会执行\n当前目录中的通配符搜索。 Git将会接收shell找到的文件列表\n代替通配符，并且它将被添加到octofamily目录里面\n。</p>\n"
     },
 
