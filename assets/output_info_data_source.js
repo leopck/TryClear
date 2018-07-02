@@ -97,6 +97,7 @@ var output_info_datas = {
         "git branch -d clean_up": "\nerror: branch 'clean_up' not found.\nDid not add \"red_octocat.txt\"",
         "git rm octocat.txt": "\nrm 'octocat.txt'\nDid not add \"red_octocat.txt\"",
         "git rm \"*.txt\"": "\nrm 'octocat.txt'\nDid not add \"red_octocat.txt\"",
+        "jiajun hello": "\nSuccess! Hello everyone!",
         "git": curl_command
     },
 
@@ -552,7 +553,7 @@ var array_correct_inputs = ["curl -O https://raw.githubusercontent.com/clearlinu
     "make clone_joe",
     "make build",
     "git commit -m \"Add cute octocat story\"",
-    "git add '*.txt'",
+    "jiajun hello",
     "git commit -m 'Add all the octocat txt files'",
     "git log",
     "git remote add origin https://github.com/try-git/try_git.git",
