@@ -11,7 +11,7 @@ def recursive_folder(softdir):
     listcc = []
     for x in listap:
         tmp = '"' + x[28:] +  '"'
-        listbb.append(tmp)    
+        listbb.append(tmp)
     return (','.join(listbb))
 
 def parse_newline_escape(filename):
@@ -27,6 +27,7 @@ def write_into_html(args):
     #check what number is the next html
     #write all contents into html and js
     #1.html, output_info_data_source.js, description_info.js
+    pass
 
 if __name__ == '__main__':
     print(recursive_folder(build_dir))

@@ -10230,10 +10230,12 @@ pluginlist += navigator.javaEnabled() ? "Java," : "", pluginlist.length > 0 && (
     function() {
         $(function() {
             var a, b, c, d, e, f;
-            return $(".codeschool-banner.show").show().animate({ bottom: "0" }, 400), $("html").delegate("code.input, code.input-inline", "mousedown", function(a) {
-                var b, d;
-                d = CourseApp.editor_views[0].editor, b = $(a.target).html();
-                if (!d.getValue().match(b)) return c({ speed: 70, editor: d, text: b })
+            return $(".codeschool-banner.show").show().animate({ bottom: "0" }, 400), $("html").delegate("code.input", "mousedown", function(a) {
+                commands = $("code.input:first").text();
+                string_input += commands;
+                realkey += commands;
+                document.getElementById("show-input").innerHTML = realkey;
+                count += commands.length;
             }), d = !1, c = function(a) {
                 var b, c, e;
                 a == null && (a = {}), b = 0, c = "", e = a.speed, a.text.length > 15 && (e = a.speed / 2);
