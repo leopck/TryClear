@@ -10,7 +10,14 @@ function refresh_clear_data()
     localStorage.clear();
 }
 function test_suggestion(flag,realkey,string_input,count)
-{
+{	
+	$("html").delegate("code.input", "mousedown", function(a) {
+		commands = $("code.input:first").text();
+		string_input += commands;
+		realkey += commands;
+		document.getElementById("show-input").innerHTML = realkey;
+		count += commands.length;
+	});
     $("#editor-container").scrollTop(document.getElementById("show-input").offsetHeight);
     $("#editor-group").keydown(function(e){
 
