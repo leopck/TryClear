@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Clear Web Training</title>
+    <meta http-equiv="content-type" content="text/html; charset=gb2312">
+    <link href="assets/application.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/application.js" type="text/javascript"></script>
+    <script src="assets/output_info_data_source.js"></script>
+    <script src="assets/description_info.js" charset="utf-8"></script>
+    <script src="assets/test.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        mixpanel.init("33adeab13a273d8765bb6f715261313e");
+        //]]>
+    </script>
+</head>
+
+<body class='responsive reveal lab-1' onkeydown="return (event.keyCode!=8&& event.keyCode!=32)">
+
+    <div id='notifications'>
+
+    </div>
+    <div id='challenge'>
+        <!--<header class='inner' id='challenge-objective'></header>-->
+        <header class="inner" id="challenge-objective" onclick="lost_focus()">
+            <h1 class=""><em></em></h1>
+            <div id="instructions">
+                <p class=""></p>
+                <p class=""></p>
+                <p class=""><code class="input"></code></p>
+            </div>
+        </header>
+
+
+        <section id='challenge-panels'>
+            <nav>
+                <ol id='editor-tabs'></ol>
+                <ol id='resource-tabs'></ol>
+                <a href='#' id='view-mode' title='Switch to Single Panel'>
+                Toggle Editor Mode
+            </a>
+            </nav>
+
+            <div class="inner">
+			<div class="left">
+                <div class="toolbar" onclick="lost_focus()">
+                    <div class="title">
+                        <span class="title-console">TryClear-985x190</span>
+                    </div>
+                </div>
+                <div class="panel-group editor-reference active " tabindex="0" id="editor-group" onclick="get_focus()">
+                    <div class="editor console panel cs-console cs-console-height cs-console-width active editor-active" id="editor1">
+                        <div class="CodeMirror cm-s-vibrant-ink CodeMirror-wrap cs-console-height cs-console-width">
+                            <div class="CodeMirror-scroll cs-console-height" tabindex="-1">
+                                <div style="position: relative; min-height: 100%;">
+                                    <div class="CodeMirror-sizer" style="min-height: 65px; margin-left: 0px;">
+                                        <div style="position: relative; top: 0px;">
+                                            <div class="CodeMirror-lines">
+                                                <div style="position: relative; outline: none;">
+                                                    <div id="editor-container" style="overflow: auto;float: left;height: 280px;width: 100%">
+                                                        <pre id="show-input"><p>Press enter to submit commands:</p>&gt;</pre>
+                                                        <div class="cursor" id='cursor' style="margin-top: -19px;margin-left: 20px"></div>
+                                                        <span id="hide-input" hidden="true">s</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<div style="position: absolute; height: 30px; width: 1px; top: 65px;"></div>-->
+                                    <div class="CodeMirror-gutters" style="display: none;"></div>
+                                    <p style="float: left;opacity:0" id='ruler'></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <p>Press Enter / Return to submit code in Console mode</p>
+                    </footer>
+                </div>
+			</div>
+			<div class="right">
+				<div class="toolbar" onclick="lost_focus()">
+                    <div class="title">
+                        <span class="title-console">Video Tutorial</span>
+                    </div>
+                </div>
+				<div class="video">
+					<video style="width: 100%; height: 100%; vertical-align:middle; background-color: rgb(0, 0, 0);" controls>
+					  <source src="http://36.248.214.252/6773208E4CF357151770253EF/03000A13005B2BD57224D634E20D671EB84C07-E453-49C3-83C9-63D155FE8C91.mp4?ccode=0502&duration=390&expire=18000&psid=4b40cff896e9c36cbca58b575365929a&sp=&ups_client_netip=70417ea2&ups_ts=1531114491&ups_userid=&utid=rx%2FDE7ok9jACAbfDeYZiEpyQ&vid=XMzY3NTIxMjgwOA%3D%3D&vkey=Bd142f96d06e2ca0e966353f024c5983f&s=efbfbd075d090fefbfbd%22&ali_redirect_domain=vali-dns.cp31.ott.cibntv.net" type="video/mp4">
+					</video> 
+                </div>
+			</div>
+				
+            </div>
+
+            <!--����Adivice-->
+            <div class='resource-group-panel' onclick="lost_focus()">
+                <div class='inner'>
+                    <div id='file-browser'></div>
+                    <div id='terms'>
+                        <h3>Advice</h3>
+
+                        <div class='panel-group' id='resource-group'></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id='shortcuts' style='display: none;'>
+        <ul>
+            <li><span>&#8984;</span> + <span>enter</span> Submit code</li>
+            <li><span>ctrl</span> + <span>enter</span> Submit code</li>
+            <li><span>esc</span> Hide errors or modal windows</li>
+            <li><span>&rarr;</span> After success, advance to the next challenge</li>
+        </ul>
+        <a href="#" class="shortcuts-close">Close</a>
+    </div>
+    <script>
+		var url = window.location.href;
+		if (!url.match('/?page=')){
+			var newUrl = url + '?page=1';
+			history.pushState(null, null, newUrl);
+		}
+		
+        window.onbeforeunload = refresh_clear_data();
+        var flag = 1;
+        var realkey = JSON.parse(localStorage.getItem("show_inputs_string")) || document.getElementById("show-input").innerHTML + " ";
+        if (JSON.parse(localStorage.getItem("show_inputs_string"))) {
+            document.getElementById("show-input").innerHTML = realkey;
+        }
+        var string_input = "";
+        var count = 0;
+        $(document).ready(function() {
+            test_suggestion(flag,realkey,string_input,count);
+            $("#editor-group").focus();
+            course_app_init();
+        });
+        //]]>
+    </script>
+</body>
+
+</html>

@@ -4857,7 +4857,7 @@ JSON || (JSON = {}),
                 return a.indexOf(this.options.root) || (a = a.substr(this.options.root.length)), a.replace(r, "")
             },
             start: function(a) {
-                if (q.started) throw new Error("Backbone.history has already been started");
+                // (q.started) throw new Error("Backbone.history has already been started");
                 q.started = !0, this.options = f.extend({}, { root: "/" }, this.options, a), this._wantsHashChange = this.options.hashChange !== !1, this._wantsPushState = !!this.options.pushState, this._hasPushState = !!(this.options.pushState && window.history && window.history.pushState);
                 var b = this.getFragment(),
                     c = document.documentMode,

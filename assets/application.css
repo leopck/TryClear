@@ -954,6 +954,25 @@ body {
     display: none
 }
 
+
+.left {
+	float: left;
+    width: 50%;
+	position: relative
+}
+
+.right {
+	float: right;
+    width: 50%;
+	position: relative
+}
+
+.video {
+    height: 310px;
+	position: relative
+	
+}
+
 #challenge #challenge-panels .panel-group#editor-group {
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
